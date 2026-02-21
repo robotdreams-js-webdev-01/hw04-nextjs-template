@@ -83,15 +83,28 @@ type TimerState = 'idle' | 'running' | 'paused' | 'done';
 
 | Kritérium | Pont |
 |---|---|
-| Játéklogika helyesen, hiánytalanul implementálva | 15p |
-| State-kezelés (useState/useEffect helyes, nem okoz infinite loop) | 15p |
-| TypeScript (interfészek, típusok, strict mode hibamentes) | 15p |
-| UI és reszponzivitás (Tailwind, mobile-first) | 15p |
-| Extra (animációk, UX finomítások, további feature, egységtesztek) | 15p |
+| Választott opció TODO-k megvalósítása (A vagy B) | 40p |
+| Hookok és state-kezelés (`useState`, `useEffect`, cleanup) | 15p |
+| TypeScript típusok + `tsc --noEmit` hibamentes | 10p |
+| UI / reszponzivitás + működő reset/start flow | 10p |
+
+Opcionális bónusz: animáció/UX finomítás (+5), de a max pontszám továbbra is 75.
 
 ---
 
 ## Futtatás
+
+### 0. Gyors setup ellenőrzés (első lépés)
+
+```bash
+npm install
+npm run dev
+```
+
+Nyisd meg: `http://localhost:3000`
+Ha látod a `4. házi – Válassz játékot` főcímet, a Next.js setup rendben van.
+
+### 1. Házi fejlesztése
 
 ```bash
 npm install
