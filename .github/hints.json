@@ -1,0 +1,66 @@
+{
+  "A layout.tsx root layout fájl létezik": {
+    "lesson": 18,
+    "tip": "Hozd létre az app/layout.tsx fájlt – 18. óra, App Router struktúra"
+  },
+  "A főoldal page.tsx létezik": {
+    "lesson": 18,
+    "tip": "Hozd létre az app/page.tsx fájlt"
+  },
+  "A memóriajáték page.tsx fájl létezik": {
+    "lesson": 18,
+    "tip": "Hozd létre az app/game/memory/page.tsx fájlt – App Router: mappa = route"
+  },
+  "Az egg timer page.tsx fájl létezik": {
+    "lesson": 18,
+    "tip": "Hozd létre az app/game/timer/page.tsx fájlt"
+  },
+  "A főoldal Next.js Link komponenst használ": {
+    "lesson": 18,
+    "tip": "import Link from 'next/link' – ne használj sima <a> taget navigációhoz"
+  },
+  "A memóriajáték oldal client componentként van jelölve": {
+    "lesson": 18,
+    "tip": "Írd a fájl LEGELEJÉRE: 'use client' – 18. óra, Server vs Client Components"
+  },
+  "Az egg timer oldal client componentként van jelölve": {
+    "lesson": 18,
+    "tip": "Írd a fájl LEGELEJÉRE: 'use client'"
+  },
+  "A layout.tsx NEM tartalmaz use client direktívát (szerver komponens)": {
+    "lesson": 18,
+    "tip": "A layout.tsx maradjon szerver komponens, távolítsd el a 'use client'-et"
+  },
+  "A memóriajáték useState hookot importál": {
+    "lesson": 18,
+    "tip": "import { useState } from 'react' – csak 'use client' komponensben"
+  },
+  "A memóriajáték useEffect hookot importál": {
+    "lesson": 18,
+    "tip": "import { useEffect } from 'react' – 18. óra, useEffect rész"
+  },
+  "Az egg timer setInterval-t használ visszaszámláláshoz": {
+    "lesson": 18,
+    "tip": "useEffect-ben: const id = setInterval(() => { ... }, 1000)"
+  },
+  "Az egg timer cleanup-ot végez (clearInterval vagy return)": {
+    "lesson": 18,
+    "tip": "useEffect return-jében: return () => clearInterval(id) – ez a cleanup"
+  },
+  "A memóriajáték TypeScript interfészt vagy típust definiál": {
+    "lesson": 18,
+    "tip": "Definiálj Card interfészt: interface Card { id: number; value: string; isFlipped: boolean; isMatched: boolean }"
+  },
+  "A tsconfig.json strict módot engedélyez": {
+    "lesson": 18,
+    "tip": "tsconfig.json-ban: compilerOptions.strict: true"
+  },
+  "A memóriajáték kártya keverési logikát tartalmaz": {
+    "lesson": 18,
+    "tip": "Használj .sort(() => Math.random() - 0.5) keveréshez"
+  },
+  "Az egg timer Start/Stop/Reset funkcionalitást tartalmaz": {
+    "lesson": 18,
+    "tip": "Definiálj handleStart, handlePause, handleReset függvényeket"
+  }
+}
