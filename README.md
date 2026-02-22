@@ -34,10 +34,11 @@ Valósítsd meg **teljes egészében** az **A** vagy a **B** opciót.
 - Opcionális: visszaszámláló timer
 
 **Adatstruktúra:**
+
 ```typescript
 interface Card {
-  id: number;        // egyedi kulcs a rendereléshez
-  value: string;     // ikon vagy szöveg (pl. '🍎')
+  id: number; // egyedi kulcs a rendereléshez
+  value: string; // ikon vagy szöveg (pl. '🍎')
   isFlipped: boolean;
   isMatched: boolean;
 }
@@ -56,6 +57,7 @@ interface Card {
 - Opcionális: animált tojás ikon
 
 **Állapotok:**
+
 ```typescript
 type TimerState = 'idle' | 'running' | 'paused' | 'done';
 ```
@@ -79,16 +81,11 @@ type TimerState = 'idle' | 'running' | 'paused' | 'done';
 
 ---
 
-## Pontozás (75 pont)
+## Pontozás
 
-| Kritérium | Pont |
-|---|---|
-| Választott opció TODO-k megvalósítása (A vagy B) | 40p |
-| Hookok és state-kezelés (`useState`, `useEffect`, cleanup) | 15p |
-| TypeScript típusok + `tsc --noEmit` hibamentes | 10p |
-| UI / reszponzivitás + működő reset/start flow | 10p |
-
-Opcionális bónusz: animáció/UX finomítás (+5), de a max pontszám továbbra is 75.
+- **Automatikus pont (CI tesztek):** max 50 p
+- **Manuális pont (UI, reszponzivitás, játék/timer flow – az oktató adja):** max 25 p
+- **Összesen:** 75 pont
 
 ---
 
