@@ -1,43 +1,27 @@
 {
-  "A layout.tsx root layout fájl létezik": {
+  "A memóriajáték page.tsx létezik": {
     "lesson": 18,
-    "tip": "Hozd létre az app/layout.tsx fájlt – 18. óra, App Router struktúra"
+    "tip": "A sablonban már van app/game/memory/page.tsx – ne töröld."
   },
-  "A főoldal page.tsx létezik": {
+  "Az egg timer page.tsx létezik": {
     "lesson": 18,
-    "tip": "Hozd létre az app/page.tsx fájlt"
-  },
-  "A memóriajáték page.tsx fájl létezik": {
-    "lesson": 18,
-    "tip": "Hozd létre az app/game/memory/page.tsx fájlt – App Router: mappa = route"
-  },
-  "Az egg timer page.tsx fájl létezik": {
-    "lesson": 18,
-    "tip": "Hozd létre az app/game/timer/page.tsx fájlt"
-  },
-  "A főoldal Next.js Link komponenst használ": {
-    "lesson": 18,
-    "tip": "import Link from 'next/link' – ne használj sima <a> taget navigációhoz"
-  },
-  "A memóriajáték oldal client componentként van jelölve": {
-    "lesson": 18,
-    "tip": "Írd a fájl LEGELEJÉRE: 'use client' – 18. óra, Server vs Client Components"
-  },
-  "Az egg timer oldal client componentként van jelölve": {
-    "lesson": 18,
-    "tip": "Írd a fájl LEGELEJÉRE: 'use client'"
-  },
-  "A layout.tsx NEM tartalmaz use client direktívát (szerver komponens)": {
-    "lesson": 18,
-    "tip": "A layout.tsx maradjon szerver komponens, távolítsd el a 'use client'-et"
+    "tip": "A sablonban már van app/game/timer/page.tsx – ne töröld."
   },
   "A memóriajáték useState hookot importál": {
     "lesson": 18,
-    "tip": "import { useState } from 'react' – csak 'use client' komponensben"
+    "tip": "import { useState } from 'react'"
   },
   "A memóriajáték useEffect hookot importál": {
     "lesson": 18,
-    "tip": "import { useEffect } from 'react' – 18. óra, useEffect rész"
+    "tip": "import { useEffect } from 'react'"
+  },
+  "Az egg timer useState hookot importál": {
+    "lesson": 18,
+    "tip": "import { useState } from 'react'"
+  },
+  "Az egg timer useEffect hookot importál": {
+    "lesson": 18,
+    "tip": "import { useEffect } from 'react'"
   },
   "Az egg timer setInterval-t használ visszaszámláláshoz": {
     "lesson": 18,
@@ -45,22 +29,38 @@
   },
   "Az egg timer cleanup-ot végez (clearInterval vagy return)": {
     "lesson": 18,
-    "tip": "useEffect return-jében: return () => clearInterval(id) – ez a cleanup"
+    "tip": "useEffect return-jében: return () => clearInterval(id)"
   },
   "A memóriajáték TypeScript interfészt vagy típust definiál": {
     "lesson": 18,
-    "tip": "Definiálj Card interfészt: interface Card { id: number; value: string; isFlipped: boolean; isMatched: boolean }"
+    "tip": "interface Card { id: number; value: string; isFlipped: boolean; isMatched: boolean }"
   },
-  "A tsconfig.json strict módot engedélyez": {
+  "A memóriajáték kártya adatstruktúrája definiált (isFlipped, isMatched)": {
     "lesson": 18,
-    "tip": "tsconfig.json-ban: compilerOptions.strict: true"
+    "tip": "Minden kártya legyen isFlipped és isMatched (vagy matched) mezővel"
   },
   "A memóriajáték kártya keverési logikát tartalmaz": {
     "lesson": 18,
-    "tip": "Használj .sort(() => Math.random() - 0.5) keveréshez"
+    "tip": ".sort(() => Math.random() - 0.5) keveréshez"
+  },
+  "A memóriajáték kártya kattintás kezelőt definiál": {
+    "lesson": 18,
+    "tip": "onClick vagy handleClick a kártyákra"
+  },
+  "A memóriajáték nyomon követi az egyező párokat": {
+    "lesson": 18,
+    "tip": "State-ben tárold isMatched / matched értékeket"
   },
   "Az egg timer Start/Stop/Reset funkcionalitást tartalmaz": {
     "lesson": 18,
-    "tip": "Definiálj handleStart, handlePause, handleReset függvényeket"
+    "tip": "handleStart, handlePause, handleReset + state (idle/running/paused)"
+  },
+  "A memóriajáték legalább 50 sor kódot tartalmaz": {
+    "lesson": 18,
+    "tip": "Töltsd ki a logikát – state, keverés, kattintás, egyezés"
+  },
+  "A README tartalmaz deployed URL-t": {
+    "lesson": 18,
+    "tip": "Deploy Vercelre, URL a README-be"
   }
 }

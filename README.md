@@ -64,12 +64,15 @@ type TimerState = 'idle' | 'running' | 'paused' | 'done';
 
 ---
 
+## Amit a sablon már ad
+
+A sablon tartalmazza: főoldal, Link a két játékhoz, `app/game/memory/page.tsx` és `app/game/timer/page.tsx` vázat (`'use client'`, üres komponens). **Neked kell megvalósítanod a játék/timer logikát.**
+
 ## Közös követelmények
 
-- **Next.js App Router** – `'use client'` direktíva ott ahol kell (`useState`, `useEffect`)
-- **TypeScript** – minden prop és state-változó explicit típussal; `npx tsc --noEmit` hibamentesen fusson
-- **Tailwind CSS** – mobile-first, utility osztályok
-- **Deploy** – Vercel (ajánlott), Netlify vagy GitHub Pages; az **élő URL kerüljön a README-be**
+- **Memóriajáték:** `useState`, `useEffect`, kártya típus (pl. `isFlipped`, `isMatched`), keverés, kattintás kezelés, egyezés nyomon követése; legalább ~50 sor értelmes kód.
+- **Egg timer:** `useState`, `useEffect`, `setInterval` + **cleanup** (`clearInterval` vagy `return () => …`), Start / Pause / Reset logika.
+- **Deploy** – Az élő URL kerüljön a README-be.
 
 ---
 
